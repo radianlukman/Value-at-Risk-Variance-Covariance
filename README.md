@@ -1,4 +1,4 @@
-# :chart_with_upwards_trend: Value at Risk - Variance Covariance Method.
+# :chart_with_upwards_trend: Value at Risk - Variance Covariance Method
 In this project, we are going to calculate value at risk with variance-covariance method using Python.
 
 ## :file_folder: Folders
