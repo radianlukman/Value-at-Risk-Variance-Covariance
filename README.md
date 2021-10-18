@@ -1,40 +1,25 @@
-# :cake: Korean Bakery Sales - Preprocessing and Visualization (Python).
-In this project, we are going to perform a data preprocessing and visualization of a Bakery Sales dataset from [kaggle]() using Python.
+# :chart_with_upwards_trend: Value at Risk - Variance Covariance Method.
+In this project, we are going to calculate value at risk with variance-covariance method using Python.
 
 ## :file_folder: Folders
 | Folder Name                             | Description    |
 |-----------------------------------------|----------------|
-| [Images](https://github.com/radianlukman/Korean-Bakery-Sales/tree/main/Images)  | Images and Plots for README.md |
+| [Images](https://github.com/radianlukman/Value-at-Risk-Variance-Covariance/tree/main/Images)  | Images for README.md and Notebook |
 
 ## :card_index: Files
-- [Korean Bakery Sales Data](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Bakery%20Sales.csv)
 
 | File   Name                             | Description    |
 |-----------------------------------------|----------------|
-| [Bakery_Sales.ipynb](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Bakery_Sales.ipynb)  | Full Project (Python Notebook) |
-| [Bakery_Sales.py](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Bakery%20Sales.py)  | Python Script |
+| [Value_at_Risk_Variance_Covariance_Method.ipynb](https://github.com/radianlukman/Value-at-Risk-Variance-Covariance/blob/main/Value_at_Risk_Variance_Covariance_Method.ipynb)  | Full Project (Python Notebook) |
+| [Value at Risk - Variance Covariance Method.py](https://github.com/radianlukman/Value-at-Risk-Variance-Covariance/blob/main/Value%20at%20Risk%20-%20Variance%20Covariance%20Method.py)  | Python Script |
 
-## :hammer_and_wrench: Preprocessing
-At first, the raw data is shown in the following figure:
+## :hammer_and_wrench: Project Details
 
-![](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Images/Uncleaned%20Data.jpg)
+![](https://github.com/radianlukman/Value-at-Risk-Variance-Covariance/blob/main/Images/Saham%20Properti.jpg)
 
-We can see that there are lots of NaN values, empty rows, and unnecessary columns. We need to clean the data first before processing it. 
-The cleaned data can be seen in the following image:
+Here, we will measure the VaR value of the property and real estate companies included in the LQ45 Index. There are four property and real estate companies in the LQ45 Index, they are: Alam Sutera Reality, Sentul City, Bumi Serpong Damai, and Lippo Karawaci. The portfolio to be formed contains the four companies with a weight of 25% each. I will use Python for this case and use steps from the video by a YouTube channel: [Financial Programming with Ritvik](https://www.youtube.com/watch?v=hdEp8A90RdM) and sources from the [Quantinsti](https://blog.quantinsti.com/calculating-covariance-matrix-portfolio-variance/) blog.
 
-![](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Images/Cleaned%20Data.jpg)
-
-You can view the full project (steps) [here](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Bakery_Sales.ipynb).
-
-## :chart_with_upwards_trend: Plots Preview
-![](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Images/Bakery%20Sales%20-%20Pie%20Chart.jpg)
-![](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Images/Bakery%20Sales%20-%20Bar%20Chart.jpg)
-![](https://github.com/radianlukman/Korean-Bakery-Sales/blob/main/Images/Bakery%20Sales%20-%20Line%20Plot.jpg)
+You can view the full project (steps) [here](https://github.com/radianlukman/Value-at-Risk-Variance-Covariance/blob/main/Value_at_Risk_Variance_Covariance_Method.ipynb).
 
 ## :pushpin: Conclusion
-1. The data that we obtained from Kaggle was raw data so we need to preprocess it first. There are six steps in preprocessing the data: deleting unnecessary rows & columns, replace NaN values with 0, change the datetime data type, combining rows that are on the same date, and make a "total" column that contains the sum of products sold.
-2. The best-selling product in that bakery was angbutter which was sold 3.229 pieces or 29.79% of the total sales. There are also other best-selling products such as croissant, plain bread, and tiramisu croissant.
-3. Sales trend at the bakery are unstable but still around average. There was a significant increase in sales during March 2020 but dropped again after that.
-
-
-
+The portfolio contains four companies of the property and real estate sector (ASRI, BKSL, BSDE, and LPKR) with a weight of 25% each. Here, the Value at Risk value is calculated using the variance-covariance method. The daily VaR for this portfolio is 4.039%. This means that if the initial fund invested in the portfolio is 10,000 dollars, then there is a 95% confidence that the loss to be received by the investor will not exceed 403.9 dollars. The VaR value for 30 days is 22.121%, so the loss that investors will receive will not exceed 2,212.1 dollars if they invest 10,000 dollars in the portfolio for 30 days.
